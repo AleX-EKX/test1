@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -76,7 +77,6 @@
 </div>
 <p class="text-decoration-line-through">This text has a line going through it.</p>
 
-<!-- времянка -->
 <button type="button" class="btn btn-primary" id="liveToastBtn">Alert</button>
 
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -163,23 +163,6 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
@@ -209,4 +192,568 @@
     });
     </script>
 </body>
+</html> -->
+
+
+<!-- страницы не найдена, нет доступа -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+     .violet{
+      color: #3A3395;
+    }
+      .violet-bg{
+      background-color: #3A3395 !important;
+    }
+    .denied-block{
+      height: 100vh;
+    }
+    .denied-block .info-block{
+      padding-left: 4rem;
+    }
+    img{
+      max-width: 45rem;
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    } 
+     .avtorization-block{
+      height: 100vh;
+     }
+     .avtorization-block .info-block{
+      max-width: 23rem;
+      width: 100%;
+     }
+     .custom-gray{
+      color: #6B7280;
+     }
+     .white-space{
+      white-space: nowrap;
+     }
+     .git-block{
+      background-color: #0000000D;
+      border-radius: 0.375rem;
+      padding: 0.563rem;
+      border-color: #D1D5DB;
+     }
+
+     .registration-block{
+      height: 100vh;
+     }
+     .registration-block .info-block{
+      max-width: 28rem;
+      width: 100%;
+      padding: 2rem 2.5rem;
+      border-radius: .5rem;
+      box-shadow: 0px 1px 3px 0px #0000001A;
+
+     }
+     .mw-custom{
+      max-width: 24.313rem;
+      width: 100%;
+     }
+     .gap-20{
+      gap: 1.25rem;
+     }
+     .mw-input-custom{
+      max-width: 32rem;
+      width: 100%;
+     }
+     .basic-block .info-block{
+      padding: 1.25rem 0;
+     }
+     .width-content{
+      max-width: max-content;
+     }
+     .send-btn{
+      margin-left: auto;
+     }
+
+
+
+
+
+
+
+
+
+
+     .user-list {
+      width: 100%;
+      max-width: 80rem;
+      margin: 0 auto;
+      border-radius: .5rem;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .user-header, .user-item {
+      display: flex;
+      align-items: center;
+      padding: 0.625rem 1.25rem;
+      background-color: #fff;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .user-header {
+      background-color: #f5f6f8;
+      color: #7a7d82;
+      font-weight: bold;
+    }
+    .user-header div {
+      flex: 1;
+      text-align: center;
+    }
+    .user-header div:nth-child(1) {
+      max-width: 51.25rem;
+      width: 100%;
+      flex: auto;
+      text-align: left;
+    }
+    .user-item:last-child {
+      border-bottom: none;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      max-width: 51.25rem;
+      width: 100%;
+    }
+    .user-info img {
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.625rem;
+    }
+    .user-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .name {
+      font-weight: bold;
+      color: #333;
+    }
+    .login {
+      color: #7a7d82;
+    }
+    .status {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .status span {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 12px;
+      background-color: #D1FAE5;
+      color: #065F46;
+      font-size: 14px;
+    }
+    .role {
+      flex: 1;
+      text-align: center;
+    }
+    .actions {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.625rem;
+    }
+    .actions a {
+      color: #fff;
+      padding: 5px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .edit {
+     cursor: pointer;
+    }
+    .delete {
+     cursor: pointer;
+    }
+    .user-list {
+      display: none;
+    }
+    .user-list.active {
+      display: block;
+    }
+    .nav-tabs {
+      display: flex;
+      border-bottom: 1px solid #eaeaea;
+      margin-bottom: 20px;
+    }
+    .nav-tabs a {
+      flex: 1;
+      text-align: center;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 3px solid transparent;
+      font-weight: bold;
+    }
+    .nav-tabs a.active {
+      color: #3b49df;
+      border-color: #3b49df;
+    }
+  </style>
+</head>
+<body>
+    <!-- <div class="denied-block d-flex align-items-center justify-content-between">
+      <div class="info-block d-flex flex-column gap-4">
+        <div class="d-flex flex-column gap-2">
+          <span class="violet fs-14">401 ОШИБКА</span>
+          <span class="fs-1 fw-bold">Доступ запрещен</span>
+          <span>У вас нет прав на просмотр этого раздела</span>
+        </div>
+        <a href="#" class="fs-6 violet text-decoration-none">Назад →</a>
+        <a href="#" class="fs-6 violet text-decoration-none">На главную →</a>
+      </div>
+      <img src="1.jfif" alt="">
+    </div> -->
+    
+
+
+
+
+    <!-- <div class="avtorization-block d-flex flex-column align-items-center justify-content-center gap-3 gap-2r">
+      <span class="fs-3 fw-bold">Войдите в ваш аккаунт</span>
+      <form class="info-block d-flex flex-column gap-4 needs-validation" novalidate>
+        <label for="basic-url" class="form-label">Логин
+          <input type="text" class="form-control" placeholder="loginname" aria-label="loginname" required>
+        </label>
+        <label for="basic-url" class="form-label">Пароль
+          <input type="text" class="form-control" placeholder="password" aria-label="password" required>
+          <div class="invalid-feedback">
+            Введите корректный пароль.
+          </div>
+        </label>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Быстрая сессия
+            </label>
+          </div>
+          <a href="#" class="fs-14 violet text-decoration-none">Зарегистрироваться</a>
+        </div>
+        <button type="submit" class="fs-14 violet-bg text-decoration-none btn text-white">Вход</button>
+        <div class="d-flex justify-content-between gap-3 align-items-center">
+          <div class="border w-100"></div>
+         <span class="white-space fs-14 custom-gray text-center w-100">Или войти через</span> 
+         <div class="border w-100"></div>
+        </div>
+
+        <div class="git-block d-flex align-items-center justify-content-center border">
+          <svg width="1.25rem" height="1.25rem" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1568_103)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017C0 14.442 2.865 18.197 6.839 19.521C7.339 19.613 7.521 19.304 7.521 19.038C7.521 18.801 7.513 18.17 7.508 17.335C4.726 17.94 4.139 15.992 4.139 15.992C3.685 14.834 3.029 14.526 3.029 14.526C2.121 13.906 3.098 13.918 3.098 13.918C4.101 13.988 4.629 14.95 4.629 14.95C5.521 16.48 6.97 16.038 7.539 15.782C7.631 15.135 7.889 14.694 8.175 14.444C5.955 14.191 3.62 13.331 3.62 9.493C3.62 8.4 4.01 7.505 4.649 6.805C4.546 6.552 4.203 5.533 4.747 4.155C4.747 4.155 5.587 3.885 7.497 5.181C8.31277 4.95851 9.15444 4.84519 10 4.844C10.85 4.848 11.705 4.959 12.504 5.181C14.413 3.885 15.251 4.154 15.251 4.154C15.797 5.533 15.454 6.552 15.351 6.805C15.991 7.505 16.379 8.4 16.379 9.493C16.379 13.341 14.04 14.188 11.813 14.435C12.172 14.745 12.491 15.356 12.491 16.291C12.491 17.629 12.479 18.71 12.479 19.038C12.479 19.306 12.659 19.618 13.167 19.52C15.1583 18.8521 16.8893 17.5753 18.1155 15.87C19.3416 14.1648 20.0009 12.1173 20 10.017C20 4.484 15.522 0 10 0Z" fill="#6B7280"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1568_103">
+            <rect width="1.25rem" height="1.25rem" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>            
+        </div>
+      </form>
+    </div> -->
+
+
+    <!-- <div class="registration-block d-flex flex-column align-items-center justify-content-center gap-3 gap-2r">
+      <span class="fs-3 fw-bold">Зарегистрируйте ваш аккаунт</span>
+      <form class="info-block d-flex flex-column gap-4 needs-validation" novalidate>
+        <label for="basic-url" class="form-label">Логин
+          <input type="text" class="form-control" placeholder="loginname" aria-label="loginname" required>
+        </label>
+        <label for="basic-url" class="form-label">Пароль
+          <input type="text" class="form-control" placeholder="password" aria-label="password" required>
+          <div class="invalid-feedback">
+            Введите корректный пароль.
+          </div>
+        </label>
+        <label for="basic-url" class="form-label">Имя
+          <input type="text" class="form-control" placeholder="" aria-label="name">
+        </label>
+        <label for="basic-url" class="form-label">Фамилия
+          <input type="text" class="form-control" placeholder="" aria-label="surname">
+        </label>
+        <label for="basic-url" class="form-label">Отчество (при наличии)
+          <input type="text" class="form-control" placeholder="" aria-label="patronymic">
+        </label>
+        <button type="submit" class="fs-14 violet-bg text-decoration-none btn text-white">Зарегистрироваться</button>
+      </form>
+    </div> -->
+
+    
+    <!-- <form class="create-recipe d-flex flex-column gap-5">
+      <span class="fs-2 fw-bold">Создание рецепта</span>
+      <div class="basic-block d-flex flex-column gap-20">
+        <span class="fs-5 fw-bold">Основная информация</span>
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Название рецепта</span>
+          <input type="text" name="name" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Краткое описание</span>
+          <div class="d-flex flex-column gap-2 w-100">
+            <textarea type="text" name="description" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></textarea>
+            <span class="fs-14 custom-gray">Опишите о чем ваш рецепт</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="basic-block d-flex flex-column gap-20">
+        <span class="fs-5 fw-bold">Дополнительная информация</span>
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Категория</span>
+          <input type="text" name="category" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Время приготовления</span>
+          <input type="text" name="time" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Белки</span>
+          <input type="text" name="proteins" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Жиры</span>
+          <input type="text" name="fats" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Углеводы</span>
+          <input type="text" name="carbohydrates" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="info-block d-flex border-top border-bottom">
+          <span class="fs-14 mw-custom">Калории</span>
+          <input type="text" name="calories" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
+
+
+      <div class="basic-block d-flex flex-column gap-20">
+        <div class="d-flex flex-column gap 1">
+          <span class="fs-5 fw-bold">Детальная информация</span>
+          <span class="fs-14 custom-gray">Детально опишите первый шаг вашего рецепта</span>
+        </div>
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Краткое действие</span>
+          <input type="text" name="category" class="form-control mw-input-custom" placeholder="Разогреть сковородку" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Описание</span>
+          <div class="d-flex flex-column gap-2 w-100">
+            <textarea type="text" name="description" class="form-control mw-input-custom" placeholder="Разогреть сковородку. Затем положить туда репчатый лук" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="fs-14 violet-bg btn text-white width-content">Добавить еще</button>
+      </div>
+
+      <div class="basic-block d-flex flex-column gap-20">
+        <span class="fs-5 fw-bold">Ингредиенты</span>
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Название ингридиента</span>
+          <input type="text" name="category" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="info-block d-flex border-top">
+          <span class="fs-14 mw-custom">Описание</span>
+          <textarea type="text" name="time" class="form-control mw-input-custom" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></textarea>
+        </div>
+        <button type="submit" class="fs-14 violet-bg btn text-white width-content">Добавить еще</button>
+        
+      </div>
+
+      <button type="submit" class="send-btn violet-bg btn width-content d-flex align-items-center gap-2">
+        <svg width="1.25rem" height="1.25rem" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.003 5.884L10 9.882L17.997 5.884C17.9674 5.37444 17.7441 4.89549 17.3728 4.54523C17.0016 4.19497 16.5104 3.99991 16 4H4C3.48958 3.99991 2.99845 4.19497 2.62718 4.54523C2.25591 4.89549 2.0326 5.37444 2.003 5.884Z" fill="white"/>
+          <path d="M18 8.118L10 12.118L2 8.118V14C2 14.5304 2.21071 15.0391 2.58579 15.4142C2.96086 15.7893 3.46957 16 4 16H16C16.5304 16 17.0391 15.7893 17.4142 15.4142C17.7893 15.0391 18 14.5304 18 14V8.118Z" fill="white"/>
+        </svg>          
+        <span class="fs-6 text-white">Отправить рецепт</span>
+      </button>
+    </form> -->
+  
+    <div class="d-flex flex-column gap-5">
+      <div class="d-flex flex-column">
+        <span class="fs-4 fw-bold">Панель администрирования</span>
+        <div class="nav-tabs">
+          <a href="#" class="active" id="tab-users">Управление пользователями</a>
+          <a href="#" id="tab-recipes">Управление рецептами</a>
+        </div>
+      </div>
+      <div class="user-list active" id="users-content">
+        <div class="user-header">
+          <div>НАИМЕНОВАНИЕ</div>
+          <div>СТАТУС</div>
+          <div>РОЛЬ</div>
+          <div></div>
+        </div>
+
+        <div class="user-item">
+          <div class="user-info">
+            <img src="./2.jfif" alt="Avatar">
+            <div class="user-details">
+              <div class="name">Jane Cooper</div>
+              <div class="login">loginName</div>
+            </div>
+          </div>
+          <div class="status"><span>Активен</span></div>
+          <div class="role">Администратор</div>
+          <div class="actions">
+            <a href="#" class="edit">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.99998H5C4.46957 2.99998 3.96086 3.2107 3.58579 3.58577C3.21071 3.96084 3 4.46955 3 4.99998V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12M18.375 2.62498C18.7728 2.22716 19.3124 2.00366 19.875 2.00366C20.4376 2.00366 20.9772 2.22716 21.375 2.62498C21.7728 3.02281 21.9963 3.56237 21.9963 4.12498C21.9963 4.68759 21.7728 5.22716 21.375 5.62498L12.362 14.639C12.1245 14.8762 11.8312 15.0499 11.509 15.144L8.636 15.984C8.54995 16.0091 8.45874 16.0106 8.37191 15.9883C8.28508 15.9661 8.20583 15.9209 8.14245 15.8575C8.07907 15.7942 8.03389 15.7149 8.01164 15.6281C7.9894 15.5412 7.9909 15.45 8.016 15.364L8.856 12.491C8.95053 12.169 9.12453 11.876 9.362 11.639L18.375 2.62498Z" stroke="#1B16A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="delete">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H21M19 6V20C19 21 18 22 17 22H7C6 22 5 21 5 20V6M8 6V4C8 3 9 2 10 2H14C15 2 16 3 16 4V6M10 11V17M14 11V17" stroke="#D43535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+            </a>
+          </div>
+        </div>
+
+        <div class="user-item">
+          <div class="user-info">
+            <img src="./2.jfif" alt="Avatar">
+            <div class="user-details">
+              <div class="name">Cody Fisher</div>
+              <div class="login">loginName</div>
+            </div>
+          </div>
+          <div class="status"><span>Активен</span></div>
+          <div class="role">Пользователь</div>
+          <div class="actions">
+            <a href="#" class="edit">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.99998H5C4.46957 2.99998 3.96086 3.2107 3.58579 3.58577C3.21071 3.96084 3 4.46955 3 4.99998V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12M18.375 2.62498C18.7728 2.22716 19.3124 2.00366 19.875 2.00366C20.4376 2.00366 20.9772 2.22716 21.375 2.62498C21.7728 3.02281 21.9963 3.56237 21.9963 4.12498C21.9963 4.68759 21.7728 5.22716 21.375 5.62498L12.362 14.639C12.1245 14.8762 11.8312 15.0499 11.509 15.144L8.636 15.984C8.54995 16.0091 8.45874 16.0106 8.37191 15.9883C8.28508 15.9661 8.20583 15.9209 8.14245 15.8575C8.07907 15.7942 8.03389 15.7149 8.01164 15.6281C7.9894 15.5412 7.9909 15.45 8.016 15.364L8.856 12.491C8.95053 12.169 9.12453 11.876 9.362 11.639L18.375 2.62498Z" stroke="#1B16A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="delete">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H21M19 6V20C19 21 18 22 17 22H7C6 22 5 21 5 20V6M8 6V4C8 3 9 2 10 2H14C15 2 16 3 16 4V6M10 11V17M14 11V17" stroke="#D43535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="user-list" id="recipes-content">
+        <div class="user-header">
+          <div>НАИМЕНОВАНИЕ11111</div>
+          <div>СТАТУС</div>
+          <div>РОЛЬ</div>
+          <div></div>
+        </div>
+
+        <div class="user-item">
+          <div class="user-info">
+            <img src="./2.jfif" alt="Avatar">
+            <div class="user-details">
+              <div class="name">Jane Cooper</div>
+              <div class="login">loginName</div>
+            </div>
+          </div>
+          <div class="status"><span>Активен</span></div>
+          <div class="role">Администратор</div>
+          <div class="actions">
+            <a href="#" class="edit">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.99998H5C4.46957 2.99998 3.96086 3.2107 3.58579 3.58577C3.21071 3.96084 3 4.46955 3 4.99998V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12M18.375 2.62498C18.7728 2.22716 19.3124 2.00366 19.875 2.00366C20.4376 2.00366 20.9772 2.22716 21.375 2.62498C21.7728 3.02281 21.9963 3.56237 21.9963 4.12498C21.9963 4.68759 21.7728 5.22716 21.375 5.62498L12.362 14.639C12.1245 14.8762 11.8312 15.0499 11.509 15.144L8.636 15.984C8.54995 16.0091 8.45874 16.0106 8.37191 15.9883C8.28508 15.9661 8.20583 15.9209 8.14245 15.8575C8.07907 15.7942 8.03389 15.7149 8.01164 15.6281C7.9894 15.5412 7.9909 15.45 8.016 15.364L8.856 12.491C8.95053 12.169 9.12453 11.876 9.362 11.639L18.375 2.62498Z" stroke="#1B16A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="delete">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H21M19 6V20C19 21 18 22 17 22H7C6 22 5 21 5 20V6M8 6V4C8 3 9 2 10 2H14C15 2 16 3 16 4V6M10 11V17M14 11V17" stroke="#D43535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+            </a>
+          </div>
+        </div>
+
+        <div class="user-item">
+          <div class="user-info">
+            <img src="./2.jfif" alt="Avatar">
+            <div class="user-details">
+              <div class="name">Cody Fisher</div>
+              <div class="login">loginName</div>
+            </div>
+          </div>
+          <div class="status"><span>Активен</span></div>
+          <div class="role">Пользователь</div>
+          <div class="actions">
+            <a href="#" class="edit">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.99998H5C4.46957 2.99998 3.96086 3.2107 3.58579 3.58577C3.21071 3.96084 3 4.46955 3 4.99998V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V12M18.375 2.62498C18.7728 2.22716 19.3124 2.00366 19.875 2.00366C20.4376 2.00366 20.9772 2.22716 21.375 2.62498C21.7728 3.02281 21.9963 3.56237 21.9963 4.12498C21.9963 4.68759 21.7728 5.22716 21.375 5.62498L12.362 14.639C12.1245 14.8762 11.8312 15.0499 11.509 15.144L8.636 15.984C8.54995 16.0091 8.45874 16.0106 8.37191 15.9883C8.28508 15.9661 8.20583 15.9209 8.14245 15.8575C8.07907 15.7942 8.03389 15.7149 8.01164 15.6281C7.9894 15.5412 7.9909 15.45 8.016 15.364L8.856 12.491C8.95053 12.169 9.12453 11.876 9.362 11.639L18.375 2.62498Z" stroke="#1B16A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="delete">
+              <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H21M19 6V20C19 21 18 22 17 22H7C6 22 5 21 5 20V6M8 6V4C8 3 9 2 10 2H14C15 2 16 3 16 4V6M10 11V17M14 11V17" stroke="#D43535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  
+  
+  
+  
+  
+  <script>
+     document.getElementById('tab-users').addEventListener('click', function() {
+      document.getElementById('users-content').classList.add('active');
+      document.getElementById('recipes-content').classList.remove('active');
+      this.classList.add('active');
+      document.getElementById('tab-recipes').classList.remove('active');
+    });
+
+    document.getElementById('tab-recipes').addEventListener('click', function() {
+      document.getElementById('recipes-content').classList.add('active');
+      document.getElementById('users-content').classList.remove('active');
+      this.classList.add('active');
+      document.getElementById('tab-users').classList.remove('active');
+    });
+
+
+
+    (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+  </script>
+</body>
 </html>
+
+
+
+
+
+
