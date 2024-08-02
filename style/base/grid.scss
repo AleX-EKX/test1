@@ -1,0 +1,10 @@
+
+.container_v2{
+  padding: 5rem;
+  @include mobile{
+    padding: 2rem;
+  }
+}
+.mw-1440{
+  max-width: 90rem;
+}
